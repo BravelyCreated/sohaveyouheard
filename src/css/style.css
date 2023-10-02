@@ -493,10 +493,10 @@ header .logo {
   font-weight: 700;
   text-shadow: 0px 0px 75px rgba(0, 119, 138, 0.75);
 }
-.home header {
+header.home {
   padding-bottom: 150px;
 }
-.home header h1 span {
+header.home h1 span {
   color: #313639;
   text-shadow: none;
 }
@@ -728,7 +728,7 @@ header .logo {
   right: -40px;
 }
 
-.interior .interior-sec.interior-breadcrumb {
+.interior.interior-sec .interior-breadcrumb {
   padding-bottom: 0;
 }
 
@@ -737,30 +737,30 @@ header .logo {
 
 
 /* INTERIOR STYLES */
-.interior section:first-of-type {
+section.interior:first-of-type {
   margin-top: 60px;
   padding-top: 0;
 }
-.interior-generic .interior-sec .breadcrumbs ul {
+.interior-sec .breadcrumbs ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.interior-generic .interior-sec .breadcrumbs li {
+.interior-sec .breadcrumbs li {
   font-size: 0.875rem;
   font-weight: 400;
   display: inline-block;
   padding: 0 10px 0 0;
   margin: 0;
 }
-.interior-generic .interior-sec .breadcrumbs li:after {
+.interior-sec .breadcrumbs li:after {
   content: ">";
   margin: 0 0 0 10px;
 }
-.interior-generic .interior-sec .breadcrumbs li:last-of-type:after {
+.interior-sec .breadcrumbs li:last-of-type:after {
   content: "";
 }
-.interior-generic .interior-sec .breadcrumbs a {
+.interior-sec .breadcrumbs a {
   color: #00778B;
   font-weight: 700;
   text-decoration-line: underline;
@@ -806,7 +806,7 @@ header .logo {
   margin: 0 0 25px 0;
   padding: 0;
 }
-.interior-generic .interior-sec ul, .interior-generic .interior-sec ol {
+.interior-generic.interior-sec ul, .interior-generic.interior-sec ol {
   margin: 0 0 25px 0;
   padding: 0 0 0 15px;
 }
@@ -814,30 +814,30 @@ header .logo {
   margin: 0 0 5px 0;
   padding: 0;
 }
-.interior .interior-content {
+.interior.interior-content {
   padding-bottom: 100px;
 }
-.interior .interior-content .container .container {
+.interior.interior-content .container .container {
   margin: 50px 0 0 0;
   padding: 0;
 }
-.interior .interior-content .container .card-caption {
+.interior.interior-content .container .card-caption {
   width: 100%;
   padding: 15px;
 }
-.interior .interior-content .container .card-caption p {
+.interior.interior-content .container .card-caption p {
   font-size: .75rem;
   margin: 0;
   padding: 0;
 }
-.interior .interior-content .container .article-headline .col:last-child {
+.interior.interior-content .container .article-headline .col:last-child {
   padding: 25px;
 }
-.interior .interior-content .container .article-headline p {
+.interior.interior-content .container .article-headline p {
   padding: 0;
   margin: 0;
 }
-.interior .sec-join {
+.interior.sec-join {
   padding-bottom: 75px;
   overflow: hidden;
 }
@@ -860,33 +860,33 @@ header .logo {
 
 /* CASE STUDY */
 
-.interior-generic .case-study-figure {
+.interior-generic.case-study-figure {
   border-radius: 50px 0 0 0;
   margin-top: 25px;
   overflow: hidden;
 }
-.interior-generic .left-column h2 {
+.interior-generic.left-column h2 {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2.25rem;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.interior-generic .case-study-headline h2 {
+.interior-generic.case-study-headline h2 {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2.25rem;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.interior-generic .case-study-figure .col {
+.interior-generic.case-study-figure .col {
   position: relative;
   padding: 0;
 }
-.interior-generic .case-study-figure .col img {
+.interior-generic.case-study-figure .col img {
   max-width: 100%;
 }
-.interior-case-study .left-column {
+.interior-case-study.left-column {
   padding: 0;
 }
 .interior-case-study .company-profile-headline, .interior-case-study .list-headline {
