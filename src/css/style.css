@@ -237,6 +237,7 @@ header .logo {
 }
 .logo-container svg {
   width: 100%;
+  max-width: 500px;
 }
 
 
@@ -260,7 +261,6 @@ header .logo {
 }
 #nav-social {
   line-height: 0;
-  padding: 0 0 15px 0;
   font-size: .875rem;
   font-weight: 700;
 }
@@ -306,7 +306,7 @@ header .logo {
 
 #nav-main > li {
   text-align: right;
-  padding: 0 0 10px 0;
+  padding: 0;
 }
 #nav-main > li {
   display: inline;
@@ -1100,7 +1100,7 @@ form.contribute hr {
 
 
 /* RESPONSIVE ONLY */
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .nav-container {
     flex-grow: 3;
     padding-top: 0;
@@ -1120,7 +1120,7 @@ form.contribute hr {
   }
   #nav-main li {
     display: block;
-    padding: 10px 0;
+    padding: 0;
     margin: 0;
     border-bottom: 1px solid white;
   }
@@ -1129,13 +1129,32 @@ form.contribute hr {
   }
   .site-search form input {
     width: 100%;
+    font-size: 1.625rem;
+    padding: 10px 88px 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .site-search form button {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    font-size: 1.5rem;
   }
   #nav-main, #nav-social {
     text-align: left;
     padding-left: 0;
   }
-  #nav-social a:first-of-type {
-    display: block;
+  #nav-social {
+    line-height: 1rem;
+  }
+  .top-container.expanded {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
   }
   .top-container.expanded .fa-bars:before, .top-container.expanded .fa-navicon:before {
     content: "\f00d";
@@ -1146,15 +1165,31 @@ form.contribute hr {
   .top-container.expanded .nav-container {
     left: 0;
   }
-  .top-container.expanded .nav-container, .top-container.expanded .logo-container {
-    position: fixed;
-  }
   .top-container.expanded .nav-container > .row {
     justify-content: space-between;
   }
   .nav-container a, #nav-main a, #nav-main .btn {
     color: white;
-    font-size: 1.25rem;
+    font-size: 2.125rem;
+    line-height: 2.125rem;
+    cursor: pointer;
+  }
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+  .nav-container a:hover, #nav-main a:hover, #nav-main .btn:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-container a:hover::after, #nav-main a:hover::after, #nav-main .btn:hover::after {
+    display: none!important;
   }
   .nav-container #nav-main li {
     text-align: left;
@@ -1162,6 +1197,7 @@ form.contribute hr {
   .dropdown-menu {
     position: relative!important;
     transform: none!important;
+    border: none!important;
   }
   .dropdown-menu a {
     color: #00778B!important;
@@ -1175,11 +1211,31 @@ form.contribute hr {
   .top-container.expanded .logo .logo-hidden {
     opacity: 1;
   }
-  .top-container.expanded a svg, .top-container.expanded .logo .st0, .top-container.expanded .logo .st1, .top-container.expanded .logo .st2, .top-container.expanded .logo .st3, .top-container.expanded .logo .st4 {
+ .top-container.expanded .logo .st0, .top-container.expanded .logo .st1, .top-container.expanded .logo .st2, .top-container.expanded .logo .st3, .top-container.expanded .logo .st4 {
     fill: white;
   }
   .top-container.expanded .logo .st3{
     fill:#00778a;
+  }
+  .top-container.expanded #nav-social {
+    color: #fff;
+    font-size: 1.375rem;
+    width: 100%;
+    text-align: center;
+  }
+  .top-container #nav-social a {
+    border: none;
+    height: 34px;
+    width: 34px;
+  }
+  .top-container #nav-social a:first-child {
+    width: 227px;
+    height: 34px;
+  }
+  .top-container.expanded #nav-social a svg {
+    background: white;
+    fill:#00778a;
+    border-radius: 50px;
   }
   .top-container #nav-button .nav-ham {
     color: white;
@@ -1195,7 +1251,9 @@ form.contribute hr {
     color: #00778a;
     background: white;
   }
+}
   
+@media (max-width: 576px) {
   .home h1 {
     font-size: 2.25rem;
   }
@@ -1228,6 +1286,10 @@ form.contribute hr {
   }
   .interior-generic .interior-sec:nth-child(3) .case-study-suggested .article-headline {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
+  }
+  .nav-container a, #nav-main a, #nav-main .btn {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 
