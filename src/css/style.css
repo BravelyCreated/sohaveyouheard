@@ -493,17 +493,17 @@ header .logo {
   font-weight: 700;
   /* text-shadow: 0px 0px 75px rgba(0, 119, 138, 0.75); */
 }
-header.home {
+.home {
   padding-bottom: 150px;
 }
-header.home h1 span {
+.home h1 span {
   color: #000000;
   text-shadow: none;
   position: relative;
   display: inline-block;
   z-index: 2;
 }
-header.home h1 span:after {
+.home h1 span:after {
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -1294,12 +1294,12 @@ form.contribute hr {
 }
 
 @media (max-width: 1140px) {
-  header.home h1 span {
+  .home h1 span {
     text-decoration: underline;
     text-decoration-color: #ffffff;
     display: inline;
   }
-  header.home h1 span:after {
+  .home h1 span:after {
     display: none;
   }
 }
